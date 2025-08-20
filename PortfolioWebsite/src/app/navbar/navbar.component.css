@@ -1,0 +1,153 @@
+
+body{
+    color: var(--text-color);
+    overflow-x: hidden;
+    position: fixed;
+    z-index: 1000;
+}
+
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    transition: all .50s ease;
+    height: 80px;
+    backdrop-filter: blur(15px);
+    padding: 0;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(7,7,21, .85);
+
+}
+
+.nav-container{
+    max-width: 1350px;
+    border-radius: 10px;
+    margin: 0 auto;
+    /* backdrop-filter: blur(15px); */
+    /* background-color: black; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 60px;
+}
+
+
+.logo:hover{
+    color: darkorange;
+    transition: all .50s ease;
+    cursor: pointer;
+
+}
+.logo i{
+    color: var(--main-color);
+    font-size: 28px;
+    margin-right: 3px;
+}
+
+.logo span{
+    color: var(--text-color);
+    font-size: 1.3rem;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar label{
+    color: var(--text-color);
+    font-size: 17.5px;
+    font-weight: 600;
+    padding: 5px 0;
+    margin: 0 30px;
+    transition: all .50s ease;
+}
+
+.navbar a{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 5px 0;
+    margin: 0 30px;
+    transition: all .50s ease;
+}
+
+/* When hovering over a specific li, make its label stand out and make other labels gray */
+.navbar:hover label:not(:hover){
+    color: rgb(153, 153, 153);
+}
+
+.navbar li:hover label{
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.fa-github {
+    font-size: 24px;
+    transition: .5s;
+    margin-right: 10px;
+  }
+
+  li{
+    cursor: pointer;
+  }
+
+
+.fa-github:hover{
+    cursor: pointer;
+    color: rgb(161, 1, 161); 
+}
+
+.fa-linkedin {
+    font-size: 24px;
+    color: white;
+    transition: .5s;
+    margin-left: 10px;
+  }
+
+  .fa-linkedin:hover{
+    cursor: pointer;
+    color: rgb(73, 73, 253); 
+  }
+
+  a{
+    text-decoration: none;
+    color: white
+  }
+
+  @media(max-width: 800px){
+    .navbar{
+        display: none;
+    }
+
+    .logo{
+        transform: translateX(-10px);
+    }
+    
+    .fa-github{
+        font-size: 2rem;
+    }
+    .fa-linkedin{
+        font-size: 2rem;
+    }
+
+    
+    
+  }
+

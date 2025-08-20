@@ -1,0 +1,205 @@
+<body>
+    <div class="image-container" id="home-section">
+        <img class="blur-bottom blender" src="/assets/images/home-page/blenderFinal.png">
+        <div class="text-overlay">
+            <label>Chris Fadel</label>
+            <p>Software Engineer, Full Stack & App Developer</p>
+        </div>
+        <!-- Lottie Animation Canvas positioned at bottom -->
+        <canvas id="arrow-down-lottie" class="lottie-canvas-bottom" (click)="scrollToExpertise()"></canvas>
+    </div>
+
+    <div class="gradient-blur">
+        <div class="gradient-rectangle"></div>
+    </div>
+    <div id="expertise-section"></div>
+    <div class="expertise">
+        <h1>My Expertise</h1>
+        <div class="expertise-cards">
+            <div class="expertise-card">
+                <div class="top">
+                    <img src="/assets/images/home-page/desktop.svg" alt="Desktop Development" class="expertise-icon">
+                    <label class="title"><span class="title-line accent-pink">Software</span><br>Development</label>
+                </div>
+                <div class="content">
+                    <span class="code-tag">&lt;p&gt;</span>
+                    <div class="copy">
+                        <p>Experienced in both functional and OOP: Python, Java, JavaScript, C, TypeScript.</p>
+                    </div>
+                    <span class="code-tag">&lt;/p&gt;</span>
+                </div>
+            </div>
+    
+            <div class="expertise-card">
+                <div class="top">
+                    <img src="/assets/images/home-page/angular.svg" alt="Angular Development" class="expertise-icon">
+                    <label class="title"><span class="title-line accent-blue">Frontend Dev</span><br>Angular, TS</label>
+                </div>
+                <div class="content">
+                    <span class="code-tag">&lt;p&gt;</span>
+                    <div class="copy">
+                        <p>Passionate about UI/UX. Over two years of development experience in HTML, CSS, JS, and Angular.</p>
+                    </div>
+                    <span class="code-tag">&lt;/p&gt;</span>
+                </div>
+            </div>
+    
+            <div class="expertise-card">
+                <div class="top">
+                    <img src="/assets/images/home-page/flutter.svg" alt="Flutter Development" class="expertise-icon">
+                    <label class="title"><span class="title-line accent-purple">Flutter Dev</span><br>Android, iOS</label>
+                </div>
+                <div class="content">
+                    <span class="code-tag">&lt;p&gt;</span>
+                    <div class="copy">
+                        <p>Skilled in developing hybrid mobile apps and cross-platform solutions using the Flutter framework.</p>
+                    </div>
+                    <span class="code-tag">&lt;/p&gt;</span>
+                </div>
+            </div>
+        </div>
+        <div class="code-background">
+            <img class='code-image' src="/assets/images/home-page/code-text.png">
+        </div>
+    </div>
+
+    <div  id="projects-section"></div>
+    <br><br>
+    <h1 class="project-header">My Projects</h1>
+    <br><br>
+
+    <div class="projects">
+        <div id="cards">
+            <div class="surround">
+                <div (mousemove)="onMouseMove($event)" (mouseleave)="onMouseLeave($event)" class="card surround" routerLink="/mirnas-website">
+                   <div class="mirnas">
+                        <div class="top-part">
+                            <img id='mirna' src="/assets/images/home-page/mirnasmacbook.png">
+                        </div>
+                        <div class="bottom-part">
+                            <label>  <span class="magic3"> Mirna's Cafe</span> </label>
+                            <p><br>A decorative restaurant website</p>
+                        </div>  
+                   </div>             
+                </div>
+            </div>
+           
+            <div class="surround">
+                <div (mousemove)="onMouseMove($event)" (mouseleave)="onMouseLeave($event)" class="card surround" routerLink="/rohedge">             
+                   <div class="move">
+                    <div class="top-part">
+                        <img id='stock1' src="/assets/images/home-page/robinhood-leaf-logo.png">
+                    </div>
+                    <div class="bottom-part">
+                        <label>  <span class="magic3">Rohedge</span> </label>
+                        <p><br>Option Pricing Calculator</p>
+                    </div>   
+                   </div>    
+                </div>
+            </div>
+                        
+            <div class="surround">
+                <div (mousemove)="onMouseMove($event)" (mouseleave)="onMouseLeave($event)" class="card surround" routerLink="/canzar-lab">
+                    <div class="move1">
+                        <div class="top-part">
+                            <img id='psu' src="/assets/images/home-page/psu-logo.png">
+                        </div>
+                        <div class="bottom-part">
+                            <label>  <span class="magic3">Canzar Lab</span> </label>
+                            <p><br>Transcriptomics Research</p>
+                        </div>     
+                    </div>
+          
+                </div>
+            </div>
+
+            <div class="surround">
+                <div (mousemove)="onMouseMove($event)" (mouseleave)="onMouseLeave($event)" class="card surround" routerLink="/s-and-p-tracker">             
+                    <div class="top-part">
+                        <img id='stock' src="/assets/images/home-page/quant-connect-logo2.png">
+                    </div>
+                    <div class="bottom-part">
+                        <label>  <span class="magic3">Automatic S&P Trader</span> </label>
+                        <p><br>S&P Trading Bot</p>
+                    </div>       
+                </div>
+            </div>
+            <div class="surround">
+                <div (mousemove)="onMouseMove($event)" (mouseleave)="onMouseLeave($event)" class="card surround" routerLink="/portfolio-website">
+                   <div class="portfolio">
+                        <div class="top-part">
+                            <img id='iphone' src="/assets/images/home-page/iphone-portfolio.png">
+                        </div>
+                        <div class="bottom-part">
+                            <label>  <span class="magic3">Portfolio</span> </label>
+                            <p><br>An Aesthetic Portfolio Website</p>
+                        </div>  
+                   </div>             
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+    <span id="experiences-section"></span>
+    <br><br><br><br>
+    <h1 class="experience-header">My Experiences</h1>
+
+    <br><br><br><br>
+
+    <div class="experiences">
+        <div class="collapsible">
+            <input type="checkbox" id ="collapsible-head">
+            <label (click)="switchOpen()" for="collapsible-head"><span *ngIf="!isPhone">Software Engineering @ Bayer</span> <span *ngIf="isPhone">SWE @ Bayer</span> <span id="date">Summer 2023</span><span *ngIf="!isOpen1" id="open">+</span> <span *ngIf="isOpen1" id="open">-</span></label>
+            <div class="collapsible-text">
+                <img *ngIf='isPhone' id='bayer' src="/assets/images/home-page/bayer-logo.png">
+
+                <h2><i class="fas fa-map-marker-alt"></i>Pittsburgh, Pennsylvania</h2>
+                <div class="experience-box">
+                        <p>
+                            Developed the UI for multiple components in Angular. Unit tested using Jasmine to achieve over 80% coverage across all components, services,
+                            and pipes. Created useful applications in Node.js to efficiently solve timing issues.
+                        </p>
+
+                    <img *ngIf="!isPhone" id='bayer' src="/assets/images/home-page/bayer-logo.png">
+                </div>
+                
+                <div class="experience-skills">
+                    <p>HTML</p>
+                    <span></span>
+                    <p>CSS</p>
+                    <p>TS</p>
+                    <p>Angular</p>
+                    <p>Node.js</p>
+                    <p>Jasmine</p>
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+</body>
+
