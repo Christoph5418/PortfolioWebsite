@@ -63,115 +63,206 @@
         </div>
     </div>
 
-    <div  id="projects-section"></div>
-    <br><br>
-    <h1 class="project-header">My Projects</h1>
-    <br><br>
-
-    <div class="projects">
-        <div id="cards">
-            <div class="surround">
-                <div (mousemove)="onMouseMove($event)" (mouseleave)="onMouseLeave($event)" class="card surround" routerLink="/mirnas-website">
-                   <div class="mirnas">
-                        <div class="top-part">
-                            <img id='mirna' src="/assets/images/home-page/mirnasmacbook.png">
-                        </div>
-                        <div class="bottom-part">
-                            <label>  <span class="magic3"> Mirna's Cafe</span> </label>
-                            <p><br>A decorative restaurant website</p>
-                        </div>  
-                   </div>             
-                </div>
-            </div>
-           
-            <div class="surround">
-                <div (mousemove)="onMouseMove($event)" (mouseleave)="onMouseLeave($event)" class="card surround" routerLink="/rohedge">             
-                   <div class="move">
-                    <div class="top-part">
-                        <img id='stock1' src="/assets/images/home-page/robinhood-leaf-logo.png">
+    <div class="my-work-section" id="my-work-section">
+        <div class="my-work-left">
+            <h1 class="my-work-title">My<br>Work</h1>
+            <p class="my-work-description">
+                Built and deployed scalable sports betting community web and hybrid mobile apps for Tale using Angular, Firebase, and Flutter.
+                Collaborated with 50+ clubs and creators to deliver interactive features like verified picks, leaderboards, and monetization.
+            </p>
+        </div>
+        
+        <div class="my-work-right">
+            <div class="featured-project">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <img src="/assets/images/home-page/phone.png" alt="Phone" class="phone-image">
                     </div>
-                    <div class="bottom-part">
-                        <label>  <span class="magic3">Rohedge</span> </label>
-                        <p><br>Option Pricing Calculator</p>
-                    </div>   
-                   </div>    
                 </div>
-            </div>
-                        
-            <div class="surround">
-                <div (mousemove)="onMouseMove($event)" (mouseleave)="onMouseLeave($event)" class="card surround" routerLink="/canzar-lab">
-                    <div class="move1">
-                        <div class="top-part">
-                            <img id='psu' src="/assets/images/home-page/psu-logo.png">
-                        </div>
-                        <div class="bottom-part">
-                            <label>  <span class="magic3">Canzar Lab</span> </label>
-                            <p><br>Transcriptomics Research</p>
-                        </div>     
+                <div class="project-info">
+                    <div class="arrow-container">
+                        <canvas id="arrow-phone-lottie" class="arrow-phone-canvas"></canvas>
                     </div>
-          
-                </div>
-            </div>
-
-            <div class="surround">
-                <div (mousemove)="onMouseMove($event)" (mouseleave)="onMouseLeave($event)" class="card surround" routerLink="/s-and-p-tracker">             
-                    <div class="top-part">
-                        <img id='stock' src="/assets/images/home-page/quant-connect-logo2.png">
-                    </div>
-                    <div class="bottom-part">
-                        <label>  <span class="magic3">Automatic S&P Trader</span> </label>
-                        <p><br>S&P Trading Bot</p>
-                    </div>       
-                </div>
-            </div>
-            <div class="surround">
-                <div (mousemove)="onMouseMove($event)" (mouseleave)="onMouseLeave($event)" class="card surround" routerLink="/portfolio-website">
-                   <div class="portfolio">
-                        <div class="top-part">
-                            <img id='iphone' src="/assets/images/home-page/iphone-portfolio.png">
-                        </div>
-                        <div class="bottom-part">
-                            <label>  <span class="magic3">Portfolio</span> </label>
-                            <p><br>An Aesthetic Portfolio Website</p>
-                        </div>  
-                   </div>             
+                    <div class="featured-label">Featured Project</div>
+                    <h2 class="project-title">Tale App</h2>
+                    <button class="view-project-btn">View Project</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <br><br><br>
-    <span id="experiences-section"></span>
-    <br><br><br><br>
-    <h1 class="experience-header">My Experiences</h1>
+    <!-- Projects Grid Section -->
+    <div class="projects-section">
+        <div class="projects-grid">
+            <!-- Featured project: 2x2 card on top left -->
+            <div class="project-card large-card" style="grid-area: large-card;">
+                <div class="project-image">
+                    <img src="/assets/images/home-page/medrival.png" alt="Featured Project">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">MedRival - Cross Platform App</h3>
+                    <div class="project-meta">
+                        <p class="project-category">Web & App Development</p>
+                        <p class="project-cta">Show project <span class="cta-line"></span></p>
+                    </div>
+                    <!-- Technology Icons -->
+                    <div class="tech-icons">
+                        <img src="/assets/images/icons/firebase.svg" alt="Firebase" class="tech-icon">
+                        <img src="/assets/images/icons/react.png" alt="React" class="tech-icon">
+                        <img src="/assets/images/icons/angular.png" alt="Angular" class="tech-icon">
+                        <img src="/assets/images/icons/nodejs.webp" alt="Node.js" class="tech-icon">
+                    </div>
+                </div>
+            </div>
 
-    <br><br><br><br>
+            <div class="project-card small-card" style="grid-area: card1;">
+                <div class="project-image">
+                    <img src="/assets/images/home-page/canzar.png" alt="Project 1">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Canzar Labs</h3>
+                    <div class="project-meta">
+                        <p class="project-category">Computational Analysis</p>
+                        <p class="project-cta">Show project <span class="cta-line"></span></p>
+                    </div>
+                    <!-- Technology Icons -->
+                    <div class="tech-icons">
+                        <img src="/assets/images/icons/anaconda.png" alt="Anaconda" class="tech-icon">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card small-card" style="grid-area: card2;">
+                <div class="project-image">
+                    <img src="/assets/images/home-page/mirnas.png" alt="Project 2">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Mirna's Café</h3>
+                    <div class="project-meta">
+                        <p class="project-category">Web Development</p>
+                        <p class="project-cta">Show project <span class="cta-line"></span></p>
+                    </div>
+                    <!-- Technology Icons -->
+                    <div class="tech-icons">
+                        <img src="/assets/images/icons/angular.png" alt="Angular" class="tech-icon">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card small-card" style="grid-area: card3;">
+                <div class="project-image">
+                    <img src="/assets/images/home-page/quant.png" alt="Project 3">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Quantative Trading</h3>
+                    <div class="project-meta">
+                        <p class="project-category">Algorithmic Trading</p>
+                        <p class="project-cta">Show project <span class="cta-line"></span></p>
+                    </div>
+                    <!-- Technology Icons -->
+                    <div class="tech-icons">
+                        <img src="/assets/images/icons/python.png" alt="Python" class="tech-icon">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Middle row: 2 small cards -->
+            <div class="project-card small-card" style="grid-area: card4;">
+                <div class="project-image">
+                    <img src="/assets/images/home-page/portfolio.png" alt="Project 4">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Portfolio</h3>
+                    <div class="project-meta">
+                        <p class="project-category">Web Development</p>
+                        <p class="project-cta">Show project <span class="cta-line"></span></p>
+                    </div>
+                    <!-- Technology Icons -->
+                    <div class="tech-icons">
+                        <img src="/assets/images/icons/angular.png" alt="Angular" class="tech-icon">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card small-card" style="grid-area: card5;">
+                <div class="project-image">
+                    <img src="/assets/images/home-page/rohedge.png" alt="Project 5">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Rohedge</h3>
+                    <div class="project-meta">
+                        <p class="project-category">Option Pricing Calculator</p>
+                        <p class="project-cta">Show project <span class="cta-line"></span></p>
+                    </div>
+                    <!-- Technology Icons -->
+                    <div class="tech-icons">
+                        <img src="/assets/images/icons/anaconda.png" alt="Anaconda" class="tech-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="experience-header">Professional Experience</h1>
 
     <div class="experiences">
         <div class="collapsible">
-            <input type="checkbox" id ="collapsible-head">
-            <label (click)="switchOpen()" for="collapsible-head"><span *ngIf="!isPhone">Software Engineering @ Bayer</span> <span *ngIf="isPhone">SWE @ Bayer</span> <span id="date">Summer 2023</span><span *ngIf="!isOpen1" id="open">+</span> <span *ngIf="isOpen1" id="open">-</span></label>
-            <div class="collapsible-text">
-                <img *ngIf='isPhone' id='bayer' src="/assets/images/home-page/bayer-logo.png">
+            <label (click)="switchOpen2()"><span class="fw-500" *ngIf="!isPhone">Software Engineering @ Picture Mosaics</span> <span *ngIf="isPhone">SWE @ Picture Mosaics</span> <span id="date" class="fw-500">May 2024 - Present</span><span *ngIf="!isOpen2" id="open">+</span> <span *ngIf="isOpen2" id="open">-</span></label>
+            <div class="collapsible-text" [class.expanded]="isOpen2">
+                <img *ngIf='isPhone' id='pm' src="/assets/images/home-page/pm.png">
+                <h2><i class="fas fa-map-marker-alt"></i><span class="location-text">Blue Bell, Pennsylvania</span></h2>
+                <div class="experience-box">
+                    <p>
+                        Designed and implemented complex, fully autonomous multi-phase flight patterns for DJI drones, integrating precise altitude, speed, and camera movements for photoshoot quality videos within a mobile app.
+                    </p>
+                    <img *ngIf="!isPhone" id='pm' src="/assets/images/home-page/pm.png">
+                </div>
+                
+                <div class="experience-skills">
+                    <div class="skill-item">
+                        <p><img src="assets/images/icons/php.svg" alt="PHP" class="skill-icon">PHP</p>
+                    </div>
+                    <div class="skill-item">
+                        <p><img src="assets/images/icons/sql.webp" alt="SQL" class="skill-icon">SQL</p>
+                    </div>
+                    <div class="skill-item">
+                        <p><img src="assets/images/icons/firebase.svg" alt="Firebase" class="skill-icon">Firebase</p>
+                    </div>
+                    <div class="skill-item">
+                        <p><img src="assets/images/icons/nodejs.webp" alt="Node.js" class="skill-icon">Node.js</p>
+                    </div>
+                    <div class="skill-item">
+                        <p><img src="assets/images/icons/angular.png" alt="Angular" class="skill-icon">Angular</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                <h2><i class="fas fa-map-marker-alt"></i>Pittsburgh, Pennsylvania</h2>
+        <div class="collapsible">
+            <label (click)="switchOpen()"><span class="fw-500" *ngIf="!isPhone">Software Engineering @ Bayer</span> <span *ngIf="isPhone">SWE @ Bayer</span> <span id="date" class="fw-500">Summer 2023</span><span *ngIf="!isOpen1" id="open">+</span> <span *ngIf="isOpen1" id="open">-</span></label>
+            <div class="collapsible-text" [class.expanded]="isOpen1">
+                <img *ngIf='isPhone' id='bayer' src="/assets/images/home-page/bayer.png">
+
+                <h2><i class="fas fa-map-marker-alt"></i><span class="location-text">Pittsburgh, Pennsylvania</span></h2>
                 <div class="experience-box">
                         <p>
                             Developed the UI for multiple components in Angular. Unit tested using Jasmine to achieve over 80% coverage across all components, services,
                             and pipes. Created useful applications in Node.js to efficiently solve timing issues.
                         </p>
 
-                    <img *ngIf="!isPhone" id='bayer' src="/assets/images/home-page/bayer-logo.png">
+                    <img *ngIf="!isPhone" id='bayer' src="/assets/images/home-page/bayer.png">
                 </div>
                 
                 <div class="experience-skills">
-                    <p>HTML</p>
-                    <span></span>
-                    <p>CSS</p>
-                    <p>TS</p>
-                    <p>Angular</p>
-                    <p>Node.js</p>
-                    <p>Jasmine</p>
+                    <div class="skill-item">
+                        <p><img src="assets/images/icons/angular.png" alt="Angular" class="skill-icon">Angular</p>
+                    </div>
+                    <div class="skill-item">
+                        <p><img src="assets/images/icons/nodejs.webp" alt="Node.js" class="skill-icon">Node.js</p>
+                    </div>
+                    <div class="skill-item">
+                        <p><img src="assets/images/home-page/mongodb.svg" alt="MongoDB" class="skill-icon">MongoDB</p>
+                    </div>
                 </div>
 
             </div>

@@ -48,6 +48,26 @@ export class NavbarComponent {
   });
 }
 
+  scrollToMyWork() {
+    this.router.navigate(['/']).then(() => {
+      setTimeout(() => {
+        this.scrollToMyWorkSection();
+      }, 100);
+    });
+  }
+
+  scrollToMyWorkSection() {
+    const targetElement = document.getElementById('my-work-section');
+    if (targetElement) {
+      const elementPosition = targetElement.offsetTop;
+      const offset = 175;
+      window.scrollTo({
+        top: elementPosition - offset,
+        behavior: 'smooth'
+      });
+    }
+  }
+
 scrollToProjectsSection() {
   const targetElement = document.getElementById('projects-section');
   if (targetElement) {

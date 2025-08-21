@@ -13,14 +13,7 @@ import { ProjectRohedgeComponent } from './projects/project-rohedge/project-rohe
 import { ProjectPortfolioComponent } from './projects/project-portfolio/project-portfolio.component';
 
 
-const appRoutes: Routes = [
-  {path: '', component: HomePageComponent},
-  {path: 'mirnas-website', component: ProjectMirnasComponent},
-  {path: 's-and-p-tracker', component: ProjectSAndPTrackerComponent},
-  {path: 'rohedge', component: ProjectRohedgeComponent},
-  {path: 'canzar-lab', component: ProjectPsuLabComponent},
-  {path: 'portfolio-website', component: ProjectPortfolioComponent},
-]
+
 
 @NgModule({
   declarations: [
@@ -36,7 +29,6 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent]

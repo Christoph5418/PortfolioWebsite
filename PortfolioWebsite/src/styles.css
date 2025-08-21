@@ -18,5 +18,15 @@
     --main-color: blue;
     --background-color:  rgb(7,7,21);
     background-color: var(--background-color);
+}
 
+/* Dark purple text selection highlight */
+::selection {
+    background-color: #4a148c;
+    /* color: #000; */
+}
+
+::-moz-selection {
+    background-color: #4a148c;
+    /* color: #000; */
 }
