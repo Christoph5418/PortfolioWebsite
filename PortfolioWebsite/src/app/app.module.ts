@@ -11,6 +11,8 @@ import { ProjectPsuLabComponent } from './projects/project-psu-lab/project-psu-l
 import { ProjectSAndPTrackerComponent } from './projects/project-s-and-p-tracker/project-s-and-p-tracker.component';
 import { ProjectRohedgeComponent } from './projects/project-rohedge/project-rohedge.component';
 import { ProjectPortfolioComponent } from './projects/project-portfolio/project-portfolio.component';
+import { ProjectMedrivalComponent } from './projects/project-medrival/project-medrival.component';
+import { ProjectTaleComponent } from './projects/project-tale/project-tale.component';
 
 
 
@@ -25,6 +27,8 @@ import { ProjectPortfolioComponent } from './projects/project-portfolio/project-
     ProjectRohedgeComponent,
     ProjectPortfolioComponent,
     ProjectSAndPTrackerComponent,
+    ProjectMedrivalComponent,
+    ProjectTaleComponent,
   ],
   imports: [
     BrowserModule,

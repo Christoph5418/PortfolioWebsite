@@ -986,6 +986,8 @@ label > .magic3{
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
   font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+  display: inline-block;
 }
 
 @media(max-width: 1050px){
@@ -1073,12 +1075,13 @@ label > .magic3{
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto auto auto;
   gap: 20px;
   grid-template-areas:
+    "card3 card4 card5"
     "large-card large-card card1"
     "large-card large-card card2"
-    "card3 card4 card5";
+    "card6 . .";
   grid-auto-rows: 300px;
 }
 
@@ -1091,6 +1094,9 @@ label > .magic3{
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.3s ease-out, transform 0.3s ease-out, all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 .project-card.fade-up-visible {
@@ -1292,11 +1298,11 @@ label > .magic3{
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-      "large-card large-card"
+      "card3 card4"
+      "card5 large-card"
       "large-card large-card"
       "card1 card2"
-      "card3 card4"
-      "card5 .";
+      "card6 .";
   }
   
   .project-card.large-card {
@@ -1312,12 +1318,13 @@ label > .magic3{
   .projects-grid {
     grid-template-columns: 1fr;
     grid-template-areas:
+      "card3"
+      "card4"
+      "card5"
       "large-card"
       "card1"
       "card2"
-      "card3"
-      "card4"
-      "card5";
+      "card6";
     gap: 15px;
   }
   

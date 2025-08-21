@@ -85,7 +85,7 @@
                     </div>
                     <div class="featured-label">Featured Project</div>
                     <h2 class="project-title">Tale App</h2>
-                    <button class="view-project-btn">View Project</button>
+                    <a class="view-project-btn" href="/tale" (click)="navigateToProject($event, '/tale')">View Project</a>
                 </div>
             </div>
         </div>
@@ -95,7 +95,7 @@
     <div class="projects-section">
         <div class="projects-grid">
             <!-- Featured project: 2x2 card on top left -->
-            <div class="project-card large-card" style="grid-area: large-card;">
+            <a class="project-card large-card" style="grid-area: large-card;" href="/medrival" (click)="navigateToProject($event, '/medrival')">
                 <div class="project-image">
                     <img src="/assets/images/home-page/medrival.png" alt="Featured Project">
                 </div>
@@ -113,9 +113,9 @@
                         <img src="/assets/images/icons/nodejs.webp" alt="Node.js" class="tech-icon">
                     </div>
                 </div>
-            </div>
+            </a>
 
-            <div class="project-card small-card" style="grid-area: card1;">
+            <a class="project-card small-card" style="grid-area: card1;" href="/canzar-lab" (click)="navigateToProject($event, '/canzar-lab')">
                 <div class="project-image">
                     <img src="/assets/images/home-page/canzar.png" alt="Project 1">
                 </div>
@@ -130,9 +130,9 @@
                         <img src="/assets/images/icons/anaconda.png" alt="Anaconda" class="tech-icon">
                     </div>
                 </div>
-            </div>
+            </a>
             
-            <div class="project-card small-card" style="grid-area: card2;">
+            <a class="project-card small-card" style="grid-area: card2;" href="/mirnas-website" (click)="navigateToProject($event, '/mirnas-website')">
                 <div class="project-image">
                     <img src="/assets/images/home-page/mirnas.png" alt="Project 2">
                 </div>
@@ -147,9 +147,9 @@
                         <img src="/assets/images/icons/angular.png" alt="Angular" class="tech-icon">
                     </div>
                 </div>
-            </div>
+            </a>
             
-            <div class="project-card small-card" style="grid-area: card3;">
+            <a class="project-card small-card" style="grid-area: card3;" href="/s-and-p-tracker" (click)="navigateToProject($event, '/s-and-p-tracker')">
                 <div class="project-image">
                     <img src="/assets/images/home-page/quant.png" alt="Project 3">
                 </div>
@@ -164,10 +164,10 @@
                         <img src="/assets/images/icons/python.png" alt="Python" class="tech-icon">
                     </div>
                 </div>
-            </div>
+            </a>
             
             <!-- Middle row: 2 small cards -->
-            <div class="project-card small-card" style="grid-area: card4;">
+            <a class="project-card small-card" style="grid-area: card4;" href="/portfolio-website" (click)="navigateToProject($event, '/portfolio-website')">
                 <div class="project-image">
                     <img src="/assets/images/home-page/portfolio.png" alt="Project 4">
                 </div>
@@ -182,9 +182,9 @@
                         <img src="/assets/images/icons/angular.png" alt="Angular" class="tech-icon">
                     </div>
                 </div>
-            </div>
+            </a>
             
-            <div class="project-card small-card" style="grid-area: card5;">
+            <a class="project-card small-card" style="grid-area: card5;" href="/rohedge" (click)="navigateToProject($event, '/rohedge')">
                 <div class="project-image">
                     <img src="/assets/images/home-page/rohedge.png" alt="Project 5">
                 </div>
@@ -199,7 +199,26 @@
                         <img src="/assets/images/icons/anaconda.png" alt="Anaconda" class="tech-icon">
                     </div>
                 </div>
-            </div>
+            </a>
+            
+            <a class="project-card small-card" style="grid-area: card6;" href="/tale" (click)="navigateToProject($event, '/tale')">
+                <div class="project-image">
+                    <img src="/assets/images/home-page/phone.png" alt="Tale App">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Tale App</h3>
+                    <div class="project-meta">
+                        <p class="project-category">Mobile App Development</p>
+                        <p class="project-cta">Show project <span class="cta-line"></span></p>
+                    </div>
+                    <!-- Technology Icons -->
+                    <div class="tech-icons">
+                        <img src="/assets/images/icons/firebase.svg" alt="Firebase" class="tech-icon">
+                        <img src="/assets/images/icons/angular.png" alt="Angular" class="tech-icon">
+                        <img src="/assets/images/icons/flutter.webp" alt="Flutter" class="tech-icon">
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
 

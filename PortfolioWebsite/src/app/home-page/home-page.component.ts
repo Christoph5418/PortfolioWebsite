@@ -232,21 +232,22 @@ export class HomePageComponent implements OnInit, AfterViewInit{
   }
 
   private animateProjectCards(): void {
-    // Animate cards in the order: featured, 1, 2, 3, 4, 5 (matches new layout)
-    const card1 = document.querySelector('.project-card[style*="grid-area: card1"]');
-    const card2 = document.querySelector('.project-card[style*="grid-area: card2"]');
+    // Animate cards in the new order: 3, 4, 5, featured (MedRival), 1, 2, Tale
     const card3 = document.querySelector('.project-card[style*="grid-area: card3"]');
-    const featuredCard = document.querySelector('.project-card.large-card');
     const card4 = document.querySelector('.project-card[style*="grid-area: card4"]');
     const card5 = document.querySelector('.project-card[style*="grid-area: card5"]');
-    
-    // Animate in sequence with delays
-    if (featuredCard) setTimeout(() => featuredCard.classList.add('fade-up-visible'), 0);
-    if (card1) setTimeout(() => card1.classList.add('fade-up-visible'), 150);
-    if (card2) setTimeout(() => card2.classList.add('fade-up-visible'), 300);
-    if (card3) setTimeout(() => card3.classList.add('fade-up-visible'), 450);
-    if (card4) setTimeout(() => card4.classList.add('fade-up-visible'), 600);
-    if (card5) setTimeout(() => card5.classList.add('fade-up-visible'), 750);
+    const featuredCard = document.querySelector('.project-card[style*="grid-area: large-card"]');
+    const card1 = document.querySelector('.project-card[style*="grid-area: card1"]');
+    const card2 = document.querySelector('.project-card[style*="grid-area: card2"]');
+    const card6 = document.querySelector('.project-card[style*="grid-area: card6"]');
+
+    if (card3) setTimeout(() => card3.classList.add('fade-up-visible'), 0);
+    if (card4) setTimeout(() => card4.classList.add('fade-up-visible'), 150);
+    if (card5) setTimeout(() => card5.classList.add('fade-up-visible'), 300);
+    if (featuredCard) setTimeout(() => featuredCard.classList.add('fade-up-visible'), 450);
+    if (card1) setTimeout(() => card1.classList.add('fade-up-visible'), 600);
+    if (card2) setTimeout(() => card2.classList.add('fade-up-visible'), 750);
+    if (card6) setTimeout(() => card6.classList.add('fade-up-visible'), 900);
   }
 
   scrollToExpertise(): void {
@@ -275,6 +276,18 @@ export class HomePageComponent implements OnInit, AfterViewInit{
     if (t < 1) return c / 2 * t * t * t + b;
     t -= 2;
     return c / 2 * (t * t * t + 2) + b;
+  }
+
+  navigateToProject(event: MouseEvent, route: string): void {
+    // Check if Ctrl/Cmd key is pressed (for new tab)
+    if (event.ctrlKey || event.metaKey) {
+      // Let the default anchor behavior handle it (opens in new tab)
+      return;
+    }
+    
+    // Prevent default anchor behavior and use Angular router
+    event.preventDefault();
+    this.router.navigate([route]);
   }
 
 }

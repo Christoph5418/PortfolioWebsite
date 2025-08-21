@@ -6,6 +6,8 @@ import { ProjectSAndPTrackerComponent } from './projects/project-s-and-p-tracker
 import { ProjectRohedgeComponent } from './projects/project-rohedge/project-rohedge.component';
 import { ProjectPsuLabComponent } from './projects/project-psu-lab/project-psu-lab.component';
 import { ProjectPortfolioComponent } from './projects/project-portfolio/project-portfolio.component';
+import { ProjectMedrivalComponent } from './projects/project-medrival/project-medrival.component';
+import { ProjectTaleComponent } from './projects/project-tale/project-tale.component';
 
 const routes: Routes = [
   {path: '', component: HomePageComponent},
@@ -14,6 +16,8 @@ const routes: Routes = [
   {path: 'rohedge', component: ProjectRohedgeComponent},
   {path: 'canzar-lab', component: ProjectPsuLabComponent},
   {path: 'portfolio-website', component: ProjectPortfolioComponent},
+  {path: 'medrival', component: ProjectMedrivalComponent},
+  {path: 'tale', component: ProjectTaleComponent},
 ]
 
 @NgModule({
