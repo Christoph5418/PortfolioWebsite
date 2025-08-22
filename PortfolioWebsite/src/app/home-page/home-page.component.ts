@@ -232,22 +232,22 @@ export class HomePageComponent implements OnInit, AfterViewInit{
   }
 
   private animateProjectCards(): void {
-    // Animate cards in the new order: 3, 4, 5, featured (MedRival), 1, 2, Tale
-    const card3 = document.querySelector('.project-card[style*="grid-area: card3"]');
-    const card4 = document.querySelector('.project-card[style*="grid-area: card4"]');
-    const card5 = document.querySelector('.project-card[style*="grid-area: card5"]');
-    const featuredCard = document.querySelector('.project-card[style*="grid-area: large-card"]');
+    // Animate cards in the new order: 1, 2, 5, featured (MedRival), 3, Tale, 4
     const card1 = document.querySelector('.project-card[style*="grid-area: card1"]');
     const card2 = document.querySelector('.project-card[style*="grid-area: card2"]');
+    const card5 = document.querySelector('.project-card[style*="grid-area: card5"]');
+    const featuredCard = document.querySelector('.project-card[style*="grid-area: large-card"]');
+    const card3 = document.querySelector('.project-card[style*="grid-area: card3"]');
     const card6 = document.querySelector('.project-card[style*="grid-area: card6"]');
+    const card4 = document.querySelector('.project-card[style*="grid-area: card4"]');
 
-    if (card3) setTimeout(() => card3.classList.add('fade-up-visible'), 0);
-    if (card4) setTimeout(() => card4.classList.add('fade-up-visible'), 150);
+    if (card1) setTimeout(() => card1.classList.add('fade-up-visible'), 0);
+    if (card2) setTimeout(() => card2.classList.add('fade-up-visible'), 150);
     if (card5) setTimeout(() => card5.classList.add('fade-up-visible'), 300);
     if (featuredCard) setTimeout(() => featuredCard.classList.add('fade-up-visible'), 450);
-    if (card1) setTimeout(() => card1.classList.add('fade-up-visible'), 600);
-    if (card2) setTimeout(() => card2.classList.add('fade-up-visible'), 750);
-    if (card6) setTimeout(() => card6.classList.add('fade-up-visible'), 900);
+    if (card3) setTimeout(() => card3.classList.add('fade-up-visible'), 600);
+    if (card6) setTimeout(() => card6.classList.add('fade-up-visible'), 750);
+    if (card4) setTimeout(() => card4.classList.add('fade-up-visible'), 900);
   }
 
   scrollToExpertise(): void {
