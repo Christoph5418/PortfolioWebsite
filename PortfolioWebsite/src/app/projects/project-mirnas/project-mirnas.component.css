@@ -8,12 +8,13 @@ body{
 .project-name{
     margin-left: 7.3%;
     font-size: 30px;
-    max-width: 40%;
+    max-width: 80%;
 }
 
-.project-name p{
-    font-size: 15px;
-    color: gray
+.project-name p, .project-name p *{
+    font-size: 15px;    
+    color: #ccc;
+    font-weight: 500;
 }
 
 .word-spacing{
@@ -21,18 +22,24 @@ body{
 }
 
 .description{
+    margin-top: 75px;
     margin-left: 7.3%;
     margin-right: 7.3%;
     display: flex;
-    color: lightgray;
+    color: #ccc;
 }
 
 .info{
     position: relative;
-    width: 42.5%;   
+    width: 50%;   
     line-height: 27px;
  
 }
+
+.info label{
+    font-weight: 400;
+}
+
 
 .other{
     margin-left: 10%;
@@ -52,7 +59,7 @@ body{
     margin-left: 50px;
     padding-top: 15px;
     border-top: 1px solid gray;
-    width: 125px;
+    width: 135px;
 }
 
 .client label{
@@ -99,8 +106,7 @@ a:hover{
     align-items: center;
     display: flex; /* Add this line */
     align-items: center; /* Add this line */
-    border: 1px solid black;
-    
+    border: 1px solid black
 }
 
 .project-info{
@@ -111,10 +117,7 @@ a:hover{
 .next-project label{
     color: black;
     font-family: 'Sora', sans-serif;
-}
 
-#next{
-    transform: translateX(-40px);
 }
 
 .line {
@@ -142,6 +145,7 @@ a:hover{
 }
 
 .images {
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,10 +157,22 @@ a:hover{
     margin-bottom: 1%;
   }
 
+.duo-image{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#next{
+    transform: translateX(12px);
+}
+
 @media(max-width: 675px){
     .project-name{
         font-size: 20px;
-        max-width: 100%;
+        max-width: 90%;
     }
 
     .description{
@@ -187,11 +203,7 @@ a:hover{
     .images{
         justify-content: center;
         align-items: center;
-        transform: translateY(50px);
-    }
-
-    .image{
-        width: 90%;
+        transform: translateY(360px);
     }
 
     .next-project{
@@ -211,6 +223,9 @@ a:hover{
         transform: translateY(20px);
     }
 
+    .duo-image{
+        flex-direction: column;
+    }
     .next-project{
         display: none;
     }

@@ -8,6 +8,7 @@ import { ProjectPsuLabComponent } from './projects/project-psu-lab/project-psu-l
 import { ProjectPortfolioComponent } from './projects/project-portfolio/project-portfolio.component';
 import { ProjectMedrivalComponent } from './projects/project-medrival/project-medrival.component';
 import { ProjectTaleComponent } from './projects/project-tale/project-tale.component';
+import { ProjectNlfComponent } from './projects/project-nlf/project-nlf.component';
 
 const routes: Routes = [
   {path: '', component: HomePageComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'portfolio-website', component: ProjectPortfolioComponent},
   {path: 'medrival', component: ProjectMedrivalComponent},
   {path: 'tale', component: ProjectTaleComponent},
+  {path: 'nittany-lion-fund', component: ProjectNlfComponent},
 ]
 
 @NgModule({

@@ -13,6 +13,7 @@ import { ProjectRohedgeComponent } from './projects/project-rohedge/project-rohe
 import { ProjectPortfolioComponent } from './projects/project-portfolio/project-portfolio.component';
 import { ProjectMedrivalComponent } from './projects/project-medrival/project-medrival.component';
 import { ProjectTaleComponent } from './projects/project-tale/project-tale.component';
+import { ProjectNlfComponent } from './projects/project-nlf/project-nlf.component';
 
 
 
@@ -29,6 +30,7 @@ import { ProjectTaleComponent } from './projects/project-tale/project-tale.compo
     ProjectSAndPTrackerComponent,
     ProjectMedrivalComponent,
     ProjectTaleComponent,
+    ProjectNlfComponent,
   ],
   imports: [
     BrowserModule,

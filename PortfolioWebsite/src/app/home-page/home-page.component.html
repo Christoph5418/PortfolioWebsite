@@ -184,6 +184,24 @@
                 </div>
             </a>
             
+            <a class="project-card small-card" style="grid-area: card7;" href="/nittany-lion-fund" (click)="navigateToProject($event, '/nittany-lion-fund')">
+                <div class="project-image">
+                    <img src="/assets/images/home-page/psu-logo.png" alt="Nittany Lion Fund">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">The Nittany Lion Fund</h3>
+                    <div class="project-meta">
+                        <p class="project-category">Web Development</p>
+                        <p class="project-cta">Show project <span class="cta-line"></span></p>
+                    </div>
+                    <!-- Technology Icons -->
+                    <div class="tech-icons">
+                        <img src="/assets/images/icons/angular.png" alt="Angular" class="tech-icon">
+                        <img src="/assets/images/icons/python.png" alt="Python" class="tech-icon">
+                    </div>
+                </div>
+            </a>
+            
             <a class="project-card small-card" style="grid-area: card5;" href="/rohedge" (click)="navigateToProject($event, '/rohedge')">
                 <div class="project-image">
                     <img src="/assets/images/home-page/rohedge.png" alt="Project 5">
@@ -224,7 +242,7 @@
 
     <h1 class="experience-header">Professional Experience</h1>
 
-    <div class="experiences">
+    <div class="experiences" id="experiences-section">
         <div class="collapsible">
             <label (click)="switchOpen2()"><span class="fw-500" *ngIf="!isPhone">Software Engineering @ Picture Mosaics</span> <span *ngIf="isPhone">SWE @ Picture Mosaics</span> <span id="date" class="fw-500">May 2024 - Present</span><span *ngIf="!isOpen2" id="open">+</span> <span *ngIf="isOpen2" id="open">-</span></label>
             <div class="collapsible-text" [class.expanded]="isOpen2">
@@ -288,28 +306,5 @@
         </div>
         
     </div>
-
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
 </body>
 

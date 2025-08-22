@@ -512,6 +512,7 @@ label > .magic3{
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.8s ease, transform 0.8s ease;
+  margin-bottom: 50vh;
 }
 
 .experiences.fade-up-visible {
@@ -583,7 +584,7 @@ label > .magic3{
 }
 
 .collapsible-text.expanded{
-  max-height: 295px;
+  max-height: 300px;
   background-color: rgba(133, 88, 255, 0.134);
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
   opacity: 1;
@@ -726,20 +727,15 @@ label > .magic3{
   }
   
   @media(max-width: 675px){
-    .image-container .text-overlay label{
-      font-size: 45px;
-      font-weight: bold;  
-      width: 100%;
-      text-align: center;
+
+    .collapsible-text.expanded{
+      max-height: 500px;
     }
 
-    .image-container .text-overlay p{
-      font-size: 20px;
-      font-weight: bold;  
-      width: 100%;
-      text-align: center;
+    #date{
+      display: none;
     }
-
+      
     body{
       transform: translateY(-40px);
     }
@@ -785,6 +781,7 @@ label > .magic3{
 
   .experience-header{
     font-size: 50px;
+    padding: 0 20px;
   }
 
   .code-background img{
@@ -794,7 +791,7 @@ label > .magic3{
 
 
   .collapsible input:checked ~ .collapsible-text{
-    max-height: 600px;
+    max-height: 1000px;
 
   }
 
@@ -808,10 +805,6 @@ label > .magic3{
     max-width: 100px;
     max-height: 100px;
     transform: translate(8px, 17.5px);
-  }
-
-  .experience-box p{
-    width: 750px;
   }
 
   h2{
@@ -1081,7 +1074,7 @@ label > .magic3{
     "card1 card2 card5"
     "large-card large-card card3"
     "large-card large-card card6"
-    "card4 .      card6";
+    "card4 card7  card6";
   grid-auto-rows: 300px;
 }
 
@@ -1147,6 +1140,15 @@ label > .magic3{
   margin: 0 auto;
   display: block;
   object-fit: contain;
+}
+
+.project-card[style*="grid-area: card7"] .project-image img {
+  margin: 0 auto;
+  display: block;
+  object-fit: contain;
+  max-width: 80%;
+  width: auto;
+  height: 100%;
 }
 
 /* Technology Icons */
@@ -1314,11 +1316,24 @@ label > .magic3{
       "card5 large-card"
       "large-card large-card"
       "card3 card6"
-      "card4 .";
+      "card4 card7";
   }
   
   .project-card.large-card {
     grid-area: large-card;
+  }
+}
+
+@media (max-width: 1200px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "card1 card2"
+      "card5 card3"
+      "large-card large-card"
+      "card4 card7"
+      "card6 .";
+    gap: 15px;
   }
 }
 
@@ -1336,7 +1351,8 @@ label > .magic3{
       "large-card"
       "card3"
       "card6"
-      "card4";
+      "card4"
+      "card7";
     gap: 15px;
   }
   

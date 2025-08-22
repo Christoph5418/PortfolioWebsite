@@ -240,6 +240,7 @@ export class HomePageComponent implements OnInit, AfterViewInit{
     const card3 = document.querySelector('.project-card[style*="grid-area: card3"]');
     const card6 = document.querySelector('.project-card[style*="grid-area: card6"]');
     const card4 = document.querySelector('.project-card[style*="grid-area: card4"]');
+    const card7 = document.querySelector('.project-card[style*="grid-area: card7"]');
 
     if (card1) setTimeout(() => card1.classList.add('fade-up-visible'), 0);
     if (card2) setTimeout(() => card2.classList.add('fade-up-visible'), 150);
@@ -248,6 +249,7 @@ export class HomePageComponent implements OnInit, AfterViewInit{
     if (card3) setTimeout(() => card3.classList.add('fade-up-visible'), 600);
     if (card6) setTimeout(() => card6.classList.add('fade-up-visible'), 750);
     if (card4) setTimeout(() => card4.classList.add('fade-up-visible'), 900);
+    if (card7) setTimeout(() => card7.classList.add('fade-up-visible'), 1050);
   }
 
   scrollToExpertise(): void {
